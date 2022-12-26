@@ -113,12 +113,9 @@ namespace Interfaz_Dynamics_365___SAP
         {
             try
             {
-                //-----------------------------Para probar a peticion espero un mensaje y si lo recibo ejecuto------------------
-                // var queue = MessagingFactory.CreateFromConnectionString("Endpoint=sb://sgroneclicksepyme.servicebus.windows.net/;SharedAccessKeyName=SAPcolau21empleados;SharedAccessKey=cl2bZy858Y3WJca2eXi2qFuHGTPHxq0qwv10oWrYEbA=");
-
-                //var client = queue.CreateMessageReceiver("colau21empleados(", ReceiveMode.PeekLock);
-                var queue = MessagingFactory.CreateFromConnectionString("Endpoint=sb://sgroneclicksepyme.servicebus.windows.net/;SharedAccessKeyName=saskeyinterfazasignaciones;SharedAccessKey=wAlLBwV+tREevwTq12wxvMen3QV3M0TErOi9J9wnbpo=");
-                var client = queue.CreateMessageReceiver("colaus21interfazasignaciones", ReceiveMode.PeekLock);
+          
+                var queue = MessagingFactory.CreateFromConnectionString("");
+                var client = queue.CreateMessageReceiver("", ReceiveMode.PeekLock);
 
 
                 var message = client.Receive(new TimeSpan(0, 0, 5));
@@ -148,13 +145,10 @@ namespace Interfaz_Dynamics_365___SAP
                 //{
                 //System.Console.WriteLine("Parametros vacíos para establecer la conexión...");
                 //System.Console.WriteLine("Conectandose con UAT por defecto");
-                crmManager._organizationUniqueName = "org47d94b4e";//Produccion //"d1cdd3456e284dd3ad33d3af30db0e";//UAT
-                crmManager._userName = "power_platform@ues21.edu.ar";
-                crmManager._password = "yPhkkLs3s4UZZptPRNBU";
-                //return
-                //}
-                //--------------------------------------------------------------------------------------------------------------
-                //crmManager.SetCrmService();
+                crmManager._organizationUniqueName = "";
+                crmManager._userName = "";
+                crmManager._password = "";
+    
 
                 crmManager._stringConnectionOAuth = (context.InputParameters.Contains("String Connection OAUth") && context.InputParameters["String Connection OAUth"] != null ? context.InputParameters["String Connection OAUth"].ToString() : string.Empty);
 
@@ -247,14 +241,7 @@ namespace Interfaz_Dynamics_365___SAP
         {
             try
             {
-                //crmService = organizationProxy;
-                //string ConnectionString = "AuthType = OAuth; " +
-                //"Username = sgradmin@trendsgr.onmicrosoft.com;" +
-                //"Password = Sgr.2020$; " +
-                //"Url = https://trendsgr.crm2.dynamics.com;" +
-                //"AppId=f74c3e38-c83f-4515-84ba-ae23661691f9;" +
-                //"RedirectUri=app://sgrauthenticationapp.com;" +
-                //"LoginPrompt=Auto";
+      
 
                 CrmService = new CrmServiceClient(ConnectionString);
             }
