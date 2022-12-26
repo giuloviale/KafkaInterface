@@ -58,15 +58,15 @@ namespace Api.Web.Dynamics365.Clases
 
 
                     // userName = connectionString[1].Remove(0, 11);
-                    userName = "power_platform@ues21.edu.ar";
+                    userName = "";
                     //password = connectionString[2].Remove(0, 11);
-                    password = "yPhkkLs3s4UZZptPRNBU";
+                    password = "";
                     //serviceUrl = connectionString[3].Remove(0, 6);
-                    serviceUrl = "https://hrfactorsues21eduaruat.crm2.dynamics.com";
+                    serviceUrl = "";
                     //clientId = connectionString[4].Remove(0, 8);
-                    clientId = "2dd31b38-4d28-4aeb-9cf5-dc9fa10833ec";
+                    clientId = "";
                     //redirectUrl = connectionString[5].Remove(0, 14);
-                    redirectUrl = "https://hrfactorsues21eduaruat.crm2.dynamics.com";
+                    redirectUrl = "";
 
                     messageHandler = new OAuthMessageHandler(serviceUrl, clientId, redirectUrl, userName, password, new HttpClientHandler());
 
@@ -146,15 +146,15 @@ namespace Api.Web.Dynamics365.Clases
                 if (connection != null)
                 {
                     // userName = connectionString[1].Remove(0, 11);
-                    userName = "power_platform@ues21.edu.ar";
+                    userName = "";
                     //password = connectionString[2].Remove(0, 11);
-                    password = "yPhkkLs3s4UZZptPRNBU";
+                    password = "";
                     //serviceUrl = connectionString[3].Remove(0, 6);
-                    serviceUrl = "https://hrfactorsues21eduaruat.crm2.dynamics.com";
+                    serviceUrl = "";
                     //clientId = connectionString[4].Remove(0, 8);
-                    clientId = "2dd31b38-4d28-4aeb-9cf5-dc9fa10833ec";
+                    clientId = "";
                     //redirectUrl = connectionString[5].Remove(0, 14);
-                    redirectUrl = "https://hrfactorsues21eduaruat.crm2.dynamics.com";
+                    redirectUrl = "";
 
                     messageHandler = new OAuthMessageHandler(serviceUrl, clientId, redirectUrl, userName, password, new HttpClientHandler());
                     //Creamos un HTTP Client para mandar un requess message al CRM Web service
