@@ -19,18 +19,7 @@ namespace Interfaz_Dynamics_365___SAP
 {
     public class CrmManager
     {
-        public IOrganizationService crmService;
-        public string _discoveryServiceAddress = "https://disco.crm2.dynamics.com/XRMServices/2011/Discovery.svc";
-        public string _organizationUniqueName = "org42f91ea3";//d1cdd3456e284dd3ad33d3af30db0e
-        public string _organizationName = string.Empty;
-        public string _userName = "admin@hwapplications.onmicrosoft.com";//power_platform@ues21.edu.ar
-        public string _password = "Hwa.1750$";//yPhkkLs3s4UZZptPRNBU
-        public string _domain = string.Empty;
-        public string _enviroment = string.Empty;
-        public DataTable dtGarantias;
-        public EntityReference EndPoint;
-        public bool isExcepcion = false;
-        public string _stringConnectionOAuth = string.Empty;
+       //get the credentials
 
 
 
